@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+*{
+    box-sizing: border-box;
+}

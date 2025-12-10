@@ -15,7 +15,7 @@ const ClientForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.post('/clients', form);
+      await API.post('/api/clients', form);
       alert('Client added successfully!');
       setForm({ name: '', designation: '', description: '', image: '' });
     } catch (err) {

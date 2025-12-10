@@ -5,7 +5,7 @@ const SubscriberList = () => {
   const [subscribers, setSubscribers] = useState([]);
 
   useEffect(() => {
-    API.get('/subscribe')
+    API.get('/api/subscribe')
       .then((res) => {
         console.log('Fetched subscribers:', res.data); // ✅ debug
         setSubscribers(res.data);

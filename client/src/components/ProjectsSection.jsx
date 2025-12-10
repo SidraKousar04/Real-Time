@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    API.get('/projects')
+    API.get('/api/projects')
       .then((res) => setProjects(res.data))
       .catch((err) => console.error('Error fetching projects:', err));
   }, []);

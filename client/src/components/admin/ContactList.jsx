@@ -5,7 +5,7 @@ const ContactList = () => {
   const [contacts, setContacts] = useState([]);
 
  useEffect(() => {
-  API.get('/contact')
+  API.get('/api/contact')
     .then((res) => {
       console.log('Fetched contacts:', res.data); // 👈 log it
       setContacts(res.data);

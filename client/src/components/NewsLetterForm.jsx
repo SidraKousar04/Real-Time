@@ -8,7 +8,7 @@ const NewsletterForm = () => {
     e.preventDefault();
 
     try {
-      await API.post('/subscribe', { email });
+      await API.post('/api/subscribe', { email });
       alert('Subscribed successfully!');
       setEmail('');
     } catch (err) {

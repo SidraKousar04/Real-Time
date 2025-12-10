@@ -14,7 +14,7 @@ const ProjectForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.post('/projects', form);
+      await API.post('/api/projects', form);
       alert('Project added successfully!');
       setForm({ name: '', description: '', image: '' });
     } catch (error) {

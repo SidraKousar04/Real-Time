@@ -16,7 +16,7 @@ const ContactForm = () => {
   
     e.preventDefault();
     try {
-      await API.post('/contact', form);
+      await API.post('/api/contact', form);
       alert('Form submitted!');
       setForm({ name: '', email: '', mobile: '', city: '' });
     } catch (err) {

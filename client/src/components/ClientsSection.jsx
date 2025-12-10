@@ -6,7 +6,7 @@ const ClientsSection = () => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    API.get('/clients')
+    API.get('/api/clients')
       .then(res => setClients(res.data))
       .catch(err => console.error('Error fetching clients:', err));
   }, []);

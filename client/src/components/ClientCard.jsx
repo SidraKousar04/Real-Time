@@ -20,7 +20,7 @@ const ClientCard = ({ client }) => {
 
       {/* Testimonial */}
       <p className="text-gray-700 text-sm italic leading-relaxed">
-        “{client.description}”
+        {client.description}
       </p>
     </div>
   );
